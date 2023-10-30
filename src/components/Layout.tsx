@@ -11,7 +11,7 @@ export default function Layout({ children }: LayoutProps) {
     <div className="bg-logotipPurple min-h-screen">
       <Navbar />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

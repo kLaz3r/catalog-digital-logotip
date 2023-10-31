@@ -6,29 +6,26 @@ import Layout from "~/components/Layout";
 const categories = [
   {
     id: 1,
-    name: "Tablouri Canvas",
-    image: "/assets/canvas.jpg",
-    link: "/canvas",
+    name: "Tricou 20 de ani",
+    image: "/assets/tricou-20-ani.jpg",
   },
   {
     id: 2,
-    name: "Cani Personalizate",
-    image: "/assets/cana.webp",
-    link: "/cana",
+    name: "Tricou 50 de ani",
+    image: "/assets/tricou-50-ani.jpg",
   },
   {
     id: 3,
-    name: "Tricouri Personalizate",
-    image: "/assets/tricouri.webp",
-    link: "/tricouri",
+    name: "Tricou Sot si Tatic",
+    image: "/assets/tricou-sot-tatic.jpg",
   },
 ];
 
-export default function Home() {
+export default function Tricouri() {
   return (
     <>
       <Head>
-        <title>Home | Logotip</title>
+        <title>Tricouri | Logotip</title>
         <meta name="description" content="Internal product catalogue" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -36,8 +33,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
             {categories.map((category) => (
-              <Link
-                href={category.link}
+              <div
                 key={category.id}
                 className="group flex h-96 w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-logotipPurple shadow-lg transition-all"
               >
@@ -50,11 +46,11 @@ export default function Home() {
                   ></Image>
                 </div>
                 <div className="py-8 text-center transition-all sm:py-6">
-                  <p className="mb-1 text-2xl font-bold text-white">
+                  <p className="mb-1 text-xl font-bold text-white">
                     {category.name}
                   </p>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>

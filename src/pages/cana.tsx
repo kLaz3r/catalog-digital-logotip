@@ -6,29 +6,26 @@ import Layout from "~/components/Layout";
 const categories = [
   {
     id: 1,
-    name: "Tablouri Canvas",
-    image: "/assets/canvas.jpg",
-    link: "/canvas",
+    name: "Cana Tudor",
+    image: "/assets/cana-tudor.jpg",
   },
   {
     id: 2,
-    name: "Cani Personalizate",
-    image: "/assets/cana.webp",
-    link: "/cana",
+    name: "Cana Profesor",
+    image: "/assets/cana-profesor.jpg",
   },
   {
     id: 3,
-    name: "Tricouri Personalizate",
-    image: "/assets/tricouri.webp",
-    link: "/tricouri",
+    name: "Cana Craciun",
+    image: "/assets/cana-craciun.jpg",
   },
 ];
 
-export default function Home() {
+export default function Cana() {
   return (
     <>
       <Head>
-        <title>Home | Logotip</title>
+        <title>Canvas | Logotip</title>
         <meta name="description" content="Internal product catalogue" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -36,8 +33,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
             {categories.map((category) => (
-              <Link
-                href={category.link}
+              <div
                 key={category.id}
                 className="group flex h-96 w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-logotipPurple shadow-lg transition-all"
               >
@@ -54,7 +50,7 @@ export default function Home() {
                     {category.name}
                   </p>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>

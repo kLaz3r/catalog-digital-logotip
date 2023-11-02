@@ -3,26 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "~/components/Layout";
 
-const categories = [
-  {
-    id: 1,
-    name: "Tablouri Canvas",
-    image: "/assets/canvas.jpg",
-    link: "/canvas",
-  },
-  {
-    id: 2,
-    name: "Cani Personalizate",
-    image: "/assets/cana.webp",
-    link: "/cana",
-  },
-  {
-    id: 3,
-    name: "Tricouri Personalizate",
-    image: "/assets/tricouri.webp",
-    link: "/tricouri",
-  },
-];
+
 
 export default function Home() {
   return (

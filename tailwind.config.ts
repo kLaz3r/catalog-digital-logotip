@@ -13,6 +13,9 @@ export default {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      backgroundImage: {
+        logotip: "url('/logotip-bg.svg')",
+      },
     },
   },
   plugins: [],

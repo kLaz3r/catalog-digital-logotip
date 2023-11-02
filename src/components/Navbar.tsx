@@ -5,7 +5,6 @@ import logo from "../../public/logo.svg";
 
 export default function Navbar() {
   const router = useRouter();
-  console.log(router);
 
   return (
     <div className="flex h-16 items-center justify-between border-b-2 border-logotipOrange bg-logotipPurple">

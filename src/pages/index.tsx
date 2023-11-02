@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Layout from "~/components/Layout";
-
-
+import produse from "../data";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -16,16 +17,20 @@ export default function Home() {
       <Layout>
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-            {categories.map((category) => (
-              <Link
-                href={category.link}
+            {produse.map((category) => (
+              <div
+                onClick={() => router.push(category.link)}
                 key={category.id}
                 className="group flex h-96 w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-logotipPurple shadow-lg transition-all"
               >
                 <div className="relative h-full w-full border-b-2 border-logotipOrange transition-all group-hover:translate-y-12 group-hover:scale-150 group-active:translate-y-12 group-active:scale-150">
                   <Image
                     className="h-auto w-full object-cover object-center"
-                    src={category.image}
+                    src={
+                      category.image !== ""
+                        ? category.image
+                        : "/assets/placeholde.jpg"
+                    }
                     alt="photo"
                     fill
                   ></Image>
@@ -35,7 +40,7 @@ export default function Home() {
                     {category.name}
                   </p>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>

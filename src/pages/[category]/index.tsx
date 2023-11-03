@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Layout from "~/components/Layout";
 import produse from "../../data";
 
-export default function Home() {
+export default function Category() {
   const router = useRouter();
   const filtered = produse.filter(
     (category) => category.link === router.asPath,
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home | Logotip</title>
+        <title>Categorii | Logotip</title>
         <meta name="description" content="Internal product catalogue" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -39,7 +39,7 @@ export default function Home() {
                   ></Image>
                 </div>
                 <div className="py-8 text-center transition-all sm:py-6">
-                  <p className="mb-1 text-2xl font-bold text-white">
+                  <p className="mb-1 text-xl font-bold text-white">
                     {subcategory.name}
                   </p>
                 </div>

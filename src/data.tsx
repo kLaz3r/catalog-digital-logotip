@@ -30,19 +30,19 @@ const produse = [
         link: "/mesaje-amuzante",
       },
       {
-        id: 4,
+        id: 5,
         name: "Pentru copii",
         image: "",
         link: "/copii",
       },
       {
-        id: 5,
+        id: 6,
         name: "Pentru Burlacite",
         image: "",
         link: "/burlacite",
       },
       {
-        id: 5,
+        id: 7,
         name: "Pentru Burlaci",
         image: "",
         link: "/burlaci",
@@ -51,9 +51,9 @@ const produse = [
   },
   {
     id: 2,
-    name: "Cani Personalizate/Sticle/Thermos",
+    name: "Cani/Sticle/Thermos",
     image: "",
-    link: "/cani-personalizate",
+    link: "/cani-sticle-thermos",
     subcategories: [
       {
         id: 1,

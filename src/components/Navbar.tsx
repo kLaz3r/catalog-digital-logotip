@@ -3,8 +3,17 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import logo from "../../public/logo.svg";
 
+function capitalize(word: string) {
+  return word[0]?.toUpperCase() + word.slice(1);
+}
+
 export default function Navbar() {
   const router = useRouter();
+  const words = router.asPath
+    .split("/")[1]
+    ?.split("-")
+    .map((word) => capitalize(word));
+  const pageTitle = words?.join(" ");
 
   return (
     <div className="flex h-16 items-center justify-between border-b-2 border-logotipOrange bg-logotipPurple">
@@ -21,7 +30,9 @@ export default function Navbar() {
       <div className="relative h-12 w-40">
         <Image src={logo as StaticImageData} alt="Logo" fill />
       </div>
-      <div className="h-12 w-40"></div>
+      <div className="flex h-12 w-40 items-center justify-center text-center font-bold">
+        {router.pathname === "/" ? "Pagina Principala" : pageTitle}
+      </div>
     </div>
   );
 }

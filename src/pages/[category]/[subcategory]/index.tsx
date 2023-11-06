@@ -18,6 +18,9 @@ export default function Subcategory() {
     return <div>404</div>;
   }
   const designs = filteredSubcategory[0]?.designs;
+  if (designs === undefined) {
+    return <div>404</div>;
+  }
   return (
     <>
       <Head>
@@ -27,7 +30,11 @@ export default function Subcategory() {
       </Head>
       <Layout>
         <div className="container mx-auto px-4">
-          {designs && <CardsGrid data={designs} />}
+          {designs?.length === 0 ? (
+            <div>SHIT</div>
+          ) : (
+            <CardsGrid data={designs} />
+          )}
         </div>
       </Layout>
     </>

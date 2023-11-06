@@ -10,8 +10,8 @@ function capitalize(word: string) {
 export default function Navbar() {
   const router = useRouter();
   const words = router.asPath
-    .split("/")[1]
-    ?.split("-")
+    .split("/")
+    [router.asPath.split("/").length - 1]?.split("-")
     .map((word) => capitalize(word));
   const pageTitle = words?.join(" ");
 

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 import Image from "next/image";
@@ -10,17 +11,25 @@ type CardProps = {
     image: string;
     link: string;
   };
+  variants: {
+    hidden: { opacity: number };
+    show: {
+      opacity: number;
+    };
+  };
 };
 
-const Card = ({ data }: CardProps) => {
+const Card = ({ data, variants }: CardProps) => {
   const router = useRouter();
   return (
-    <div
+    <motion.div
+      variants={variants}
+      whileTap={{ scale: 0.9 }}
       onClick={() => router.push(router.asPath + data.link)}
       key={data.id}
-      className="group flex h-96 w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-logotipPurple shadow-lg transition-all"
+      className=" group flex h-96 w-full cursor-pointer flex-col items-center justify-center overflow-hidden rounded-lg bg-logotipPurple shadow-lg transition-all"
     >
-      <div className="relative h-full w-full border-b-2 border-logotipOrange transition-all group-hover:translate-y-12 group-hover:scale-150 group-active:translate-y-12 group-active:scale-150">
+      <div className="relative h-full w-full border-b-2 border-logotipOrange transition-all">
         <Image
           className="h-auto w-full object-cover object-center"
           src={data.image !== "" ? data.image : "/assets/placeholde.jpg"}
@@ -31,7 +40,7 @@ const Card = ({ data }: CardProps) => {
       <div className="py-8 text-center transition-all sm:py-6">
         <p className="mb-1 text-xl font-bold text-white">{data.name}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

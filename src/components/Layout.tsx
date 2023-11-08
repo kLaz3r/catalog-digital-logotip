@@ -7,7 +7,7 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen bg-slate-200">
+    <div className="min-h-screen bg-slate-200 text-slate-200">
       <Navbar />
       {children}
       {/* <Footer /> */}

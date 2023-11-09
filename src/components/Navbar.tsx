@@ -48,7 +48,7 @@ export default function Navbar() {
       <div className="relative h-12 w-40">
         <Image src={logo as StaticImageData} alt="Logo" fill />
       </div>
-      <div className="flex h-12 w-40 items-center justify-center text-center font-bold">
+      <div className="flex h-12 w-40 items-center justify-center text-center font-medium">
         {router.pathname === "/" ? "Pagina Principala" : pageTitle}
       </div>
     </div>

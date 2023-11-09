@@ -66,6 +66,20 @@ const paginate = (
 };
 
 const CardsGrid = ({ data }: CardsGridProps) => {
+  const [currentPage, setCurrentPage] = React.useState(1);
+  const getMaxPage = () => {
+    return Math.ceil(data.length / 6);
+  };
+  const maxPage = getMaxPage();
+  const minPage = 1;
+  const pagesArray = [];
+  for (let i = minPage; i <= maxPage; i++) {
+    pagesArray.push(i);
+  }
+
+  const shownData = paginate(data, 6, currentPage);
+  console.log(pagesArray);
+
   return (
     <>
       <motion.div
@@ -80,15 +94,34 @@ const CardsGrid = ({ data }: CardsGridProps) => {
         }}
         className="grid grid-cols-1 grid-rows-2 gap-6 p-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
       >
-        {data?.map((element) => (
+        {shownData?.map((element) => (
           <Card variants={item} key={element.id} data={element}></Card>
         ))}
       </motion.div>
-      <div className="flex w-full items-center justify-end text-logotipPurple">
-        <div className="flex gap-6">
-          <button className="">Back</button>
-          <p className="inline">Page Number:</p>
-          <button>Front</button>
+      <div className="flex w-full items-center justify-center text-logotipPurple">
+        <div className="flex gap-3">
+          {pagesArray.length !== 1
+            ? pagesArray.map((element) => {
+                const dynamicStyles =
+                  element === currentPage
+                    ? "bg-logotipOrange scale-125"
+                    : "bg-logotipPurple";
+                return (
+                  <motion.span
+                    variants={container}
+                    initial="hidden"
+                    animate="show"
+                    className={`${dynamicStyles} rounded-lg px-4 py-2 text-xl font-bold text-slate-200 transition-all`}
+                    key={element}
+                    onClick={() => {
+                      setCurrentPage(element);
+                    }}
+                  >
+                    {element}
+                  </motion.span>
+                );
+              })
+            : null}
         </div>
       </div>
     </>

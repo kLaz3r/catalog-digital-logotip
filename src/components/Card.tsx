@@ -21,13 +21,24 @@ type CardProps = {
 
 const Card = ({ data, variants }: CardProps) => {
   const router = useRouter();
+
+  console.log(router.asPath[router.asPath.length - 1]);
+
+  const clickHandler = () => {
+    if (router.asPath.endsWith("/")) {
+      void router.push(router.asPath + data.link);
+      return;
+    }
+    void router.push(router.asPath + "/" + data.link);
+  };
+
   return (
     <motion.div
       variants={variants}
       whileTap={{ scale: 0.9 }}
-      onClick={() => router.push(router.asPath + data.link)}
+      onClick={clickHandler}
       key={data.id}
-      className=" group flex h-96 w-full cursor-pointer flex-col items-center justify-center overflow-hidden rounded-lg bg-logotip bg-cover bg-right-bottom bg-no-repeat text-slate-200 shadow-lg transition-all"
+      className=" group flex h-72 w-full cursor-pointer flex-col items-center justify-center overflow-hidden rounded-lg bg-logotip bg-cover bg-right-bottom bg-no-repeat text-slate-200 shadow-xl transition-all"
     >
       <div className="relative h-full w-full border-b-2 border-logotipOrange transition-all">
         <Image
@@ -37,8 +48,8 @@ const Card = ({ data, variants }: CardProps) => {
           fill
         ></Image>
       </div>
-      <div className="py-8 text-center transition-all sm:py-6">
-        <p className="mb-1 text-xl font-bold text-slate-200">{data.name}</p>
+      <div className="py-4 text-center transition-all sm:py-4">
+        <p className="mb-1 text-xl text-slate-200">{data.name}</p>
       </div>
     </motion.div>
   );

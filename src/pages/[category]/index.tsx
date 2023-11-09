@@ -8,10 +8,9 @@ import produse from "../../data";
 export default function Category() {
   const router = useRouter();
   const filtered = produse.filter(
-    (category) => category.link === router.asPath,
+    (category) => "/" + category.link === router.asPath,
   );
   const subcategories = filtered[0]?.subcategories;
-  console.log(subcategories);
 
   if (subcategories === undefined) {
     return <div>404</div>;

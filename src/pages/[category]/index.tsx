@@ -32,6 +32,7 @@ export default function Category() {
                 width={500}
                 height={500}
                 alt="under construction"
+                priority
               ></Image>
             </div>
           ) : (

@@ -40,6 +40,7 @@ export default function Subcategory() {
                 width={500}
                 height={500}
                 alt="under construction"
+                priority
               ></Image>
             </div>
           ) : (

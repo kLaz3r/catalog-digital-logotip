@@ -30,7 +30,7 @@ export default function Navbar() {
   const pageTitle = words?.join(" ");
 
   return (
-    <div className="flex h-16 items-center justify-between border-b-2 border-logotipOrange bg-logotip bg-cover bg-right-bottom bg-no-repeat text-slate-200">
+    <div className="fixed flex h-16 w-full items-center justify-between border-b-2 border-logotipOrange bg-logotip bg-cover bg-right-bottom bg-no-repeat text-slate-200">
       <div className="flex h-12 w-40 items-center justify-center">
         {router.pathname !== "/" && (
           <motion.button

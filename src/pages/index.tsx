@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 pt-16">
           <CardsGrid data={produse}></CardsGrid>
         </div>
       </Layout>

@@ -22,8 +22,6 @@ type CardProps = {
 const Card = ({ data, variants }: CardProps) => {
   const router = useRouter();
 
-  console.log(router.asPath[router.asPath.length - 1]);
-
   const clickHandler = () => {
     if (router.asPath.endsWith("/")) {
       void router.push(router.asPath + data.link);

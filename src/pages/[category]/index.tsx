@@ -24,7 +24,7 @@ export default function Category() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="container mx-auto min-h-screen px-4">
+        <div className="container mx-auto min-h-screen px-4 pt-16">
           {subcategories.length === 0 ? (
             <div className="flex h-screen items-center justify-center">
               <Image

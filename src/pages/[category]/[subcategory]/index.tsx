@@ -32,7 +32,7 @@ export default function Subcategory() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="container mx-auto">
+        <div className="container mx-auto pt-16">
           {designs.length === 0 ? (
             <div className="flex h-screen items-center justify-center">
               <Image

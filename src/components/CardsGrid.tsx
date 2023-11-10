@@ -78,7 +78,6 @@ const CardsGrid = ({ data }: CardsGridProps) => {
   }
 
   const shownData = paginate(data, 6, currentPage);
-  console.log(pagesArray);
 
   return (
     <>

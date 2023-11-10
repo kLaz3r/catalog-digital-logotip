@@ -16,6 +16,7 @@ const produse = [
             name: "Aniversare 1 an",
             image: "",
             link: "aniversare-1-an",
+            pret: 50,
           },
         ],
       },

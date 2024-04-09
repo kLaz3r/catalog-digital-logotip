@@ -485,6 +485,121 @@ const produse = [
         image:
           "/assets/tricouri/tricouri-aniversari/tricou-din-bumbac-personalizat-cu-text-majorat.jpg",
         link: "aniversari",
+        designs: [
+          {
+            id: 1,
+            name: "Acum 18 ani DIVA",
+            image:
+              "/assets/tricouri/tricouri-aniversari/tricou-din-bumbac-personalizat-cu-text-acum-18-ani.jpg",
+            link: "tricou-acum-18-ani-diva",
+          },
+          {
+            id: 2,
+            name: "Arat bine la varsta mea",
+            image:
+              "/assets/tricouri/tricouri-aniversari/tricou-din-bumbac-personalizat-cu-text-arat-bine-la-varsta-mea.jpg",
+            link: "tricou-arat-bine-la-varsta-mea",
+          },
+          {
+            id: 3,
+            name: "Istoria Barbatului",
+            image:
+              "/assets/tricouri/tricouri-aniversari/tricou-din-bumbac-personalizat-cu-text-istoria.jpg",
+            link: "tricou-istoria-barbatului",
+          },
+          {
+            id: 4,
+            name: "Made in",
+            image:
+              "/assets/tricouri/tricouri-aniversari/tricou-din-bumbac-personalizat-cu-text-made-in.jpg",
+            link: "tricou-made-in",
+          },
+          {
+            id: 5,
+            name: "Acum pot face LEGAL",
+            image:
+              "/assets/tricouri/tricouri-aniversari/tricou-din-bumbac-personalizat-cu-text-majorat.jpg",
+            link: "tricou-acum-pot-face-legal",
+          },
+          {
+            id: 6,
+            name: "I am perfect since...",
+            image:
+              "/assets/tricouri/tricouri-aniversari/tricou-din-bumbac-personalizat-cu-text-perfect-since.jpg",
+            link: "tricou-i-am-perfect-since",
+          },
+          {
+            id: 7,
+            name: "All original parts",
+            image:
+              "/assets/tricouri/tricouri-aniversari/tricou-personalizat-all-original-parts.jpg",
+            link: "tricou-all-original-parts",
+          },
+          {
+            id: 8,
+            name: "Sot si Tatic Editie Limitata",
+            image:
+              "/assets/tricouri/tricouri-aniversari/tricou-personalizat-cu-text-editie-limitata.jpg",
+            link: "tricou-sot-si-tatic-editie-limitata",
+          },
+          {
+            id: 9,
+            name: "Limited Edition",
+            image:
+              "/assets/tricouri/tricouri-aniversari/tricou-personalizat-limited-edition. 1.jpg",
+            link: "tricou-limited-edition",
+          },
+          {
+            id: 10,
+            name: "Limited Edition",
+            image:
+              "/assets/tricouri/tricouri-aniversari/tricou-personalizat-limited-edition.jpg",
+            link: "tricou-limited-edition-2",
+          },
+          {
+            id: 11,
+            name: "Fabricat si Produs",
+            image:
+              "/assets/tricouri/tricouri-aniversari/tricou-personalizat-model-an-de-fabricatie.jpg",
+            link: "tricou-fabricat-si-produs",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Burlaci si Burlacite",
+        image:
+          "/assets/tricouri/tricouri-burlaci-burlacite/tricou-din-bumbac-personalizat-cu-text-pentru-burlacite.jpg",
+        link: "burlaci-burlacite",
+        designs: [
+          {
+            id: 1,
+            name: "I am getting married",
+            image:
+              "/assets/tricouri/tricouri-burlaci-burlacite/tricou-din-bumbac-personalizat-cu-text-pentru-burlacite.jpg",
+            link: "tricou-i-am-getting-married",
+          },
+          {
+            id: 2,
+            name: "Echipa de baut a mirelui",
+            image:
+              "/assets/tricouri/tricouri-burlaci-burlacite/tricou-personalizat-cu-text-pentru-petrecerea-burlacilor-echipa-mirelui.jpg",
+            link: "tricou-echipa-de-baut-a-mirelui",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "Pentru Copii",
+        image: "",
+        link: "copii",
+        designs: [],
+      },
+      {
+        id: 4,
+        name: "Pentru Copii",
+        image: "",
+        link: "copii",
         designs: [],
       },
     ],

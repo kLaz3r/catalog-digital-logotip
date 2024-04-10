@@ -967,6 +967,207 @@ const produse = [
       },
     ],
   },
+  {
+    id: 3,
+    name: "Ceasuri",
+    image: "/assets/ceasuri/ceas 1.jpg",
+    link: "ceasuri",
+    subcategories: [
+      {
+        id: 0,
+        name: "No Subcategory",
+        image: "",
+        link: "no-subcategory",
+        designs: [
+          {
+            id: 1,
+            name: "Colaj Foto Aniversare",
+            image: "/assets/ceasuri/ceas 1.jpg",
+            link: "colaj-foto-aniversare",
+          },
+          {
+            id: 2,
+            name: "Colaj Foto Bebe",
+            image: "/assets/ceasuri/ceas 2.jpg",
+            link: "colaj-foto-bebe",
+          },
+          {
+            id: 3,
+            name: "Colaj Foto La Multi Ani",
+            image: "/assets/ceasuri/ceas 3.jpg",
+            link: "colaj-foto-la-multi-ani",
+          },
+          {
+            id: 4,
+            name: "Colaj Foto Bunici",
+            image: "/assets/ceasuri/ceas 4.jpg",
+            link: "colaj-foto-bunici",
+          },
+          {
+            id: 5,
+            name: "Dinozauri",
+            image: "/assets/ceasuri/ceas 5.jpg",
+            link: "dinozauri",
+          },
+          {
+            id: 6,
+            name: "Colaj Foto Cuplu",
+            image: "/assets/ceasuri/ceas 7.jpg",
+            link: "colaj-foto-cuplu",
+          },
+          {
+            id: 7,
+            name: "Aniversare Cuplu",
+            image: "/assets/ceasuri/ceas 8.jpg",
+            link: "aniversare-cuplu",
+          },
+          {
+            id: 8,
+            name: "Momentele Noastre Fericite",
+            image: "/assets/ceasuri/ceas 9.jpg",
+            link: "momentele-noastre-fericite",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Cutii si Etichete de Vin",
+    image:
+      "/assets/cutii-etichete-vin/cutie-de-vin-personalizata-glob-de-craciun_31511973729.jpg",
+    link: "cutii-etichete-vin",
+    subcategories: [
+      {
+        id: 0,
+        name: "No Subcategory",
+        image: "",
+        link: "no-subcategory",
+        designs: [
+          {
+            id: 1,
+            name: "Majorat",
+            image: "/assets/cutii-etichete-vin/Cutie vin.jpg",
+            link: "majorat",
+          },
+          {
+            id: 2,
+            name: "Pentru Diriginte",
+            image:
+              "/assets/cutii-etichete-vin/cutie-de-vin-personalizata-absolvire_01666184396.jpg",
+            link: "pentru-diriginte",
+          },
+          {
+            id: 3,
+            name: "Cu Ocazia Craciunului",
+            image:
+              "/assets/cutii-etichete-vin/cutie-de-vin-personalizata-glob-de-craciun_31511973729.jpg",
+            link: "cu-ocazia-craciunului",
+          },
+          {
+            id: 4,
+            name: "Aniversarea Casatoriei",
+            image:
+              "/assets/cutii-etichete-vin/cutie-de-vin-personalizata-model-de-casatorie_51514567274.jpg",
+            link: "aniversarea-casatoriei",
+          },
+          {
+            id: 5,
+            name: "Good Friends Good Time",
+            image: "/assets/cutii-etichete-vin/CV aniversare.jpg",
+            link: "good-friends-good-time",
+          },
+          {
+            id: 6,
+            name: "Best Boss Ever",
+            image: "/assets/cutii-etichete-vin/CV best boss.jpg",
+            link: "good-friends-good-time",
+          },
+          {
+            id: 7,
+            name: "Pentru Nasi",
+            image: "/assets/cutii-etichete-vin/CV nasi 1.jpg",
+            link: "pentru-nasi",
+          },
+          {
+            id: 8,
+            name: "Pentru Nasi 2",
+            image: "/assets/cutii-etichete-vin/CV nasi 2.jpg",
+            link: "pentru-nasi-2",
+          },
+          {
+            id: 9,
+            name: "Pentru Nasi 3",
+            image: "/assets/cutii-etichete-vin/CV nasi 3.jpg",
+            link: "pentru-nasi-3",
+          },
+          {
+            id: 10,
+            name: "Pentru Nasi 4",
+            image: "/assets/cutii-etichete-vin/CV nasi 4.jpg",
+            link: "pentru-nasi-4",
+          },
+          {
+            id: 11,
+            name: "Pentru Nasi 5",
+            image: "/assets/cutii-etichete-vin/CV nasi 5.jpg",
+            link: "pentru-nasi-5",
+          },
+          {
+            id: 12,
+            name: "Pentru Nasi 6",
+            image: "/assets/cutii-etichete-vin/CV nasi 6.jpg",
+            link: "pentru-nasi-6",
+          },
+          {
+            id: 13,
+            name: "Pentru Nasi 7",
+            image: "/assets/cutii-etichete-vin/CV nasi 7.jpg",
+            link: "pentru-nasi-7",
+          },
+          {
+            id: 14,
+            name: "Pentru Pensionare",
+            image: "/assets/cutii-etichete-vin/CV pensionare 1.jpg",
+            link: "pentru-pensionare",
+          },
+          {
+            id: 15,
+            name: "Pentru Profesor, Diriginte",
+            image: "/assets/cutii-etichete-vin/CV profesor, dirig.jpg",
+            link: "pentru-profesor-diriginte",
+          },
+          {
+            id: 16,
+            name: "Pentru Profesori",
+            image: "/assets/cutii-etichete-vin/CV profesori 1.jpg",
+            link: "pentru-profesori",
+          },
+          {
+            id: 17,
+            name: "Sarbatori Fericite",
+            image:
+              "/assets/cutii-etichete-vin/vin-personalizat-cu-o-poza-si-mesaj-sarbatori-fericite_21668608720.jpg",
+            link: "sarbatori-fericite",
+          },
+          {
+            id: 18,
+            name: "Jolly Juice",
+            image:
+              "/assets/cutii-etichete-vin/vin-personalizat-cu-text-jolly-juice_11659446853.jpg",
+            link: "jolly-juice",
+          },
+          {
+            id: 19,
+            name: "Urare de Craciun",
+            image:
+              "/assets/cutii-etichete-vin/vin-personalizat-cu-text-urare-de-craciun_11659446749.jpg",
+            link: "urare-de-craciun",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export default produse;

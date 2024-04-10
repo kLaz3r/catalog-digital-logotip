@@ -1168,6 +1168,88 @@ const produse = [
       },
     ],
   },
+  {
+    id: 5,
+    name: "Tocatoare si Sorturi",
+    image:
+      "/assets/tocatoare-si-sorturi/original_big-lil-chef-father-and-son-apron-set.jpg",
+    link: "tocatoare-si-sorturi",
+    subcategories: [
+      {
+        id: 0,
+        name: "No Subcategory",
+        image: "",
+        link: "no-subcategory",
+        designs: [
+          {
+            id: 1,
+            name: "Mini Tocator",
+            image: "/assets/tocatoare-si-sorturi/Mini tocator.jpg",
+            link: "mini-tocator",
+          },
+          {
+            id: 2,
+            name: "Lil Chef Father and Son",
+            image:
+              "/assets/tocatoare-si-sorturi/original_big-lil-chef-father-and-son-apron-set.jpg",
+            link: "lil-chef-father-and-son",
+          },
+          {
+            id: 3,
+            name: "Iubesc Gogosile",
+            image:
+              "/assets/tocatoare-si-sorturi/sort-personalizat-pentru-copii-cu-text-iubitorii-de-gogosi_21585132412.jpg",
+            link: "iubesc-gogosile",
+          },
+          {
+            id: 4,
+            name: "Junior de bucatar",
+            image:
+              "/assets/tocatoare-si-sorturi/sort-personalizat-pentru-copii-cu-text-junior-de-bucatar_21585298935.jpg",
+            link: "junior-de-bucatar",
+          },
+          {
+            id: 5,
+            name: "Maestru in Devenire",
+            image:
+              "/assets/tocatoare-si-sorturi/sort-personalizat-pentru-copii-cu-text-maestru-in-devenire_21585156232.jpg",
+            link: "maestru-in-devenire",
+          },
+          {
+            id: 6,
+            name: "Reteta Secreta",
+            image: "/assets/tocatoare-si-sorturi/Tocator 1.jpg",
+            link: "reteta-secreta",
+          },
+          {
+            id: 7,
+            name: "Queen of the Kitchen",
+            image: "/assets/tocatoare-si-sorturi/Tocator 2.jpg",
+            link: "queen-of-the-kitchen",
+          },
+          {
+            id: 8,
+            name: "Chef",
+            image: "/assets/tocatoare-si-sorturi/Tocator 3.jpg",
+            link: "chef",
+          },
+          {
+            id: 9,
+            name: "The Grillfather",
+            image: "/assets/tocatoare-si-sorturi/Tocator 4.jpg",
+            link: "the-grillfather",
+          },
+          {
+            id: 10,
+            name: "Chef 2",
+            image:
+              "/assets/tocatoare-si-sorturi/tocator-din-bambus-personalizat-chef_11657702570.jpg",
+            link: "chef-2",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export default produse;

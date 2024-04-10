@@ -31,7 +31,13 @@ export default function Navbar() {
   let pageTitle = words?.join(" ");
 
   if (pageTitle === "No Subcategory") {
-    pageTitle = capitalize(router.asPath.split("/")[1]);
+    pageTitle = capitalize(
+      router.asPath
+        .split("/")[1]
+        ?.split("-")
+        .map((word) => capitalize(word))
+        .join(" "),
+    );
   }
 
   const backButtonHandler = () => {
@@ -65,7 +71,7 @@ export default function Navbar() {
       <div className="relative h-12 w-40">
         <Image src={logo as StaticImageData} alt="Logo" fill />
       </div>
-      <div className="flex h-12 w-40 items-center justify-center text-center font-medium">
+      <div className="mr-8 flex h-12 w-40 items-center justify-end text-right font-medium">
         {router.pathname === "/" ? "Pagina Principala" : pageTitle}
       </div>
     </div>

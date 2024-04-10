@@ -15,6 +15,9 @@ export default function Category() {
   if (subcategories === undefined) {
     return <div>404</div>;
   }
+  if (subcategories[0]?.id === 0) {
+    void router.push(router.asPath + "/" + "no-subcategory");
+  }
 
   return (
     <>

@@ -590,17 +590,146 @@ const produse = [
       },
       {
         id: 4,
-        name: "Pentru Copii",
-        image: "",
-        link: "copii",
-        designs: [],
+        name: "Pentru Cupluri",
+        image:
+          "/assets/tricouri/tricouri-cupluri/tricou-din-bumbac-personalizat-cu-text.jpg",
+        link: "cupluri",
+        designs: [
+          {
+            id: 1,
+            name: "Furt de Inimi",
+            image:
+              "/assets/tricouri/tricouri-cupluri/tricou-din-bumbac-personalizat-cu-text.jpg",
+            link: "tricou-furt-de-inimi",
+          },
+          {
+            id: 2,
+            name: "Perfect Match",
+            image:
+              "/assets/tricouri/tricouri-cupluri/tricou-din-bumbac-personalizat-cu-text-perfect-match.jpg",
+            link: "tricou-perfect-match",
+          },
+          {
+            id: 3,
+            name: "Soulmates Forever",
+            image:
+              "/assets/tricouri/tricouri-cupluri/tricou-personalizat-cu-o-poza-si-text-love.jpg",
+            link: "tricou-soulmates-forever",
+          },
+        ],
       },
       {
-        id: 4,
-        name: "Pentru Copii",
+        id: 5,
+        name: "Mamici si Tatici in devenire",
+        image:
+          "/assets/tricouri/tricouri-mamici-tatici/tricou-din-bumbac-personalizat-cu-text.jpg",
+        link: "mamici-tatici-in-devenire",
+        designs: [
+          {
+            id: 1,
+            name: "Barbatii Adevarati",
+            image:
+              "/assets/tricouri/tricouri-mamici-tatici/tricou-din-bumbac-personalizat-cu-text.jpg",
+            link: "tricou-barbatii-adevarati",
+          },
+          {
+            id: 2,
+            name: "Becoming a Father",
+            image:
+              "/assets/tricouri/tricouri-mamici-tatici/tricou-din-bumbac-personalizat-cu-text-becoming-a-father.jpg",
+            link: "tricou-becoming-a-father",
+          },
+          {
+            id: 3,
+            name: "Daddy Level Up",
+            image:
+              "/assets/tricouri/tricouri-mamici-tatici/tricou-din-bumbac-personalizat-cu-text-gamer.jpg",
+            link: "tricou-daddy-level-up",
+          },
+          {
+            id: 4,
+            name: "Super Tata",
+            image:
+              "/assets/tricouri/tricouri-mamici-tatici/tricou-personalizat-cu-text-super-tata.jpg",
+            link: "tricou-super-tata",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Mugs",
+    image: "/assets/mugs/2 cani.jpg",
+    link: "mugs",
+    subcategories: [
+      {
+        id: 0,
+        name: "No Subcategory",
         image: "",
-        link: "copii",
-        designs: [],
+        link: "no-subcategory",
+        designs: [
+          {
+            id: 1,
+            name: "Aniversare 1 an",
+            image: "/assets/mugs/2 cani.jpg",
+            link: "aniversare-1-an",
+          },
+          {
+            id: 2,
+            name: "My Love",
+            image: "/assets/mugs/10798_4730783190 (1).jpg",
+            link: "my-love",
+          },
+          {
+            id: 3,
+            name: "Bea doar SEFA",
+            image:
+              "/assets/mugs/cana-alba-cu-maner-auriu-din-cana-asta-bea-doar-sefa-430-9629.webp",
+            link: "bea-doar-sefa",
+          },
+          {
+            id: 4,
+            name: "Magic Christmas",
+            image:
+              "/assets/mugs/cana-metalica-emailata-cu-text-christmas-candies_01605002272.jpg",
+            link: "magic-christmas",
+          },
+          {
+            id: 5,
+            name: "Sarbatori Fericite",
+            image:
+              "/assets/mugs/cana-personalizata-cu-2-poze-si-mesaj-sarbatori-fericite_11668778007.jpg",
+            link: "sarbatori-fericite",
+          },
+          {
+            id: 6,
+            name: "Merry Christmas",
+            image:
+              "/assets/mugs/cana-personalizata-cu-text-cute-cats_61666786814.jpg",
+            link: "merry-christmas",
+          },
+          {
+            id: 7,
+            name: "Happy Holiday",
+            image:
+              "/assets/mugs/cana-personalizata-cu-text-happy-holidays_61666852516.jpg",
+            link: "happy-holiday",
+          },
+          {
+            id: 8,
+            name: "Christmas Kids",
+            image:
+              "/assets/mugs/cana-personalizata-pentru-copii-cu-o-poza-christmas-joy_01601988181.jpg",
+            link: "christmas-kids",
+          },
+          {
+            id: 9,
+            name: "Coffee Valentine",
+            image: "/assets/mugs/coffe valentine mug.jpg",
+            link: "coffee-valentine",
+          },
+        ],
       },
     ],
   },

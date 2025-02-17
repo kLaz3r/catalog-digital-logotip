@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Router, useRouter } from "next/router";
-import CardsGrid from "~/components/CardsGrid";
+import { useRouter } from "next/router";
 import Layout from "~/components/Layout";
 import produse from "../../../../data";
 
@@ -41,7 +40,13 @@ export default function Subcategory() {
     filteredDesign[0]?.image === "" || filteredDesign[0]?.image === undefined
       ? "/assets/placeholde.jpg"
       : filteredDesign[0]?.image;
-  const data = filteredDesign[0];
+  const data: {
+    id: number;
+    name: string;
+    image: string;
+    link: string;
+    pret?: number;
+  } = filteredDesign[0];
   return (
     <>
       <Head>
@@ -61,7 +66,7 @@ export default function Subcategory() {
                   {data.name}
                 </h1>
                 <p>ID: {designId}</p>
-                <p>Pret: {data.pret} Lei</p>
+                <p>Pret: {data.pret ?? "N/A"}</p>
               </div>
             </div>
           </div>
